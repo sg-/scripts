@@ -31,7 +31,6 @@ echo ">>> Compiling htop ..."
 echo
 
 cd htop-${HTOP_VER}
-#LDFLAGS="-L${COMMON_INSTALL_PREFIX}/lib" CPPFLAGS="-I${COMMON_INSTALL_PREFIX}/include" LIBS="-lresolv" ./configure --prefix=${COMMON_INSTALL_PREFIX}
 ./configure && make
 echo
 echo ">>> Installing htop in ${COMMON_INSTALL_PREFIX}/bin ..."
